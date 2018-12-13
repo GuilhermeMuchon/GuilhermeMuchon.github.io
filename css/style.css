@@ -113,7 +113,7 @@ table {
 img {
 	opacity: .5;
 	user-select: none;
-	margin: 1% 0% 20% 32%;
+	margin: 1% 0% 20% 37%;
 }
 
 img:hover {
@@ -121,13 +121,13 @@ img:hover {
 }
 
 img#gaben {
-	width: 35%;
-	height: 25%;
+	width: 25%;
+	height: auto;
 }
 
 img#git {
-	width: 35%;
-	height: 25%;	
+	width: 25%;
+	height: auto;	
 }
 
 div:hover {
