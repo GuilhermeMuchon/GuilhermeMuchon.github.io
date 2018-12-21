@@ -25,11 +25,11 @@ p {
 }
 
 p#presentation {
-   -webkit-transition: opacity .5s ease-in-out;
-   -moz-transition: opacity .5s ease-in-out;
-   -ms-transition: opacity .5s ease-in-out;
-   -o-transition: opacity .5s ease-in-out;
-   transition: opacity .5s ease-in-out;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
 }
 
 footer {
@@ -160,6 +160,126 @@ div:active {
 
 div.backgroundBlock {
 	background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1440px) {
+	div {
+		height: 18%;
+	}
+
+	div#principal {
+		height: 15%
+	}
+
+	div#myStuff {
+		top: 25%;
+		height: 35%;
+	}
+
+	footer {
+		top: 100%;
+	}
+
+	h1 {
+		font-size: 1.2vw;
+	}
+
+	h2 {
+		font-size: 1.2vw;
+	}
+
+	h3 {
+		font-size: 1.2vw;
+	}
+
+	p {
+		font-size: 1.2vw;
+	}
+
+	footer p {
+		font-size: 1vw;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	div {
+		height: 15%;
+	}
+
+	div#principal {
+		height: 12%
+	}
+
+	div#myStuff {
+		top: 25%;
+		height: 25%;
+	}
+
+	footer {
+		top: 100%;
+	}
+
+	h1 {
+		font-size: 1.5vw;
+	}
+
+	h2 {
+		font-size: 1.5vw;
+	}
+
+	h3 {
+		font-size: 1.5vw;
+	}
+
+	p {
+		font-size: 1.5vw;
+	}
+
+	footer p {
+		font-size: 1.2vw;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	div {
+		height: 10;
+	}
+
+	div#principal {
+		margin-top: 25%;
+		height: 6%;
+	}
+
+	div#myStuff {
+		margin: 65% auto 15% auto; 
+		top: 5%;
+		height: 12%;
+	}
+
+	footer {
+		top: 45%;
+	}
+
+	h1 {
+		font-size: 2vw;
+	}
+
+	h2 {
+		font-size: 2vw;
+	}
+
+	h3 {
+		font-size: 2vw;
+	}
+
+	p {
+		font-size: 2vw;
+	}
+
+	footer p {
+		margin-top: 10%;
+		font-size: 1.5vw;
+	}
 }
 
 
