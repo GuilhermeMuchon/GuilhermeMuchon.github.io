@@ -7,6 +7,11 @@ html, body {
 	height: 100%;
 }
 
+a {
+	display: block;
+	cursor: default;
+}
+
 h1 {
 	font-size: 1vw;
 }
@@ -130,20 +135,12 @@ img {
 	opacity: .5;
 	user-select: none;
 	margin: 1% 0% 20% 37%;
-}
-
-img:hover {
-	opacity: 1;
-}
-
-img#gaben {
 	width: 25%;
 	height: auto;
 }
 
-img#git {
-	width: 25%;
-	height: auto;	
+img:hover {
+	opacity: 1;
 }
 
 div:hover {
@@ -158,11 +155,15 @@ div:active {
 	opacity: .3;
 	transition: opacity .025s;
 	background-position: 25% 25%;
+	border-radius: 1000px;
+	transition: border-radius 5s;
 }
 
 div.backgroundBlock {
 	background-color: #FFFFFF;
 }
+
+/* RESOLUTIONS */
 
 @media only screen and (max-width: 1440px) {
 	div {
@@ -259,7 +260,7 @@ div.backgroundBlock {
 	}
 
 	footer {
-		top: 45%;
+		top: 80%;
 	}
 
 	h1 {
@@ -283,7 +284,6 @@ div.backgroundBlock {
 		font-size: 1.5vw;
 	}
 }
-
 
 /*	FUTURE
  *	-webkit-transform: scale(1);
