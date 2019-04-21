@@ -11,7 +11,7 @@ function createBackground() {
 		var newColor, prevColor = null;
 		var body = document.getElementById('body');
 
-		for (i = 0; i < 70; i++) {
+		for (i = 0; i < 60; i++) {
 			randNum = Math.floor(Math.random() * colors.length);
 
 			newColor = colors[randNum];

@@ -1,32 +1,5 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
 html, body {
 	height: 100%;
-}
-
-a {
-	display: block;
-	cursor: default;
-}
-
-h1 {
-	font-size: 1vw;
-}
-
-h2 {
-	font-size: 1vw;
-}
-
-h3 {
-	margin-top: 8%; 
-	font-size: 1vw;
-}
-
-p {
-	font-size: 1vw;
 }
 
 p#presentation {
@@ -35,26 +8,6 @@ p#presentation {
 	-ms-transition: opacity .5s ease-in-out;
 	-o-transition: opacity .5s ease-in-out;
 	transition: opacity .5s ease-in-out;
-}
-
-footer {
-	position: absolute;
-	background-color: #000000;
-	opacity: .8;
-	width: 20%;
-	height: 4%;
-	margin: auto; 
-	top: 145%;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	-webkit-transition: all .8s ease-in; 
-	border-radius: 5px;
-	z-index: 10;
-}
-
-footer p {
-	font-size: 0.8vw;
 }
 
 div {
@@ -75,25 +28,29 @@ div {
 	user-select: none;
 }
 
-div#principal {
+.standard {
 	position: absolute;
 	background-color: #000000;
 	display: block;
 	margin: auto;
-	height: 20%; 
-	min-height: 5%;
-	width: 30%;
 	opacity: .8;
-	top: 0;
-	bottom: 60%;
 	left: 0;
 	right: 0; 
 	box-shadow: 1px 1px 1px black;
 	border-radius: 5px;
-	z-index: 10;
+	z-index: 11;
+	display: flex;
+	flex-direction: column;
+	/*min-height: 20vh;*/
 }
 
-div#principal:hover, div#myStuff:hover, footer:hover {
+div#principal {
+	top: 10%;
+	width: 30%;
+	height: auto;
+}
+
+div.standard:hover, footer:hover {
 	border-radius: 50px;
 	transition: border-radius 1s;
 	opacity: .9;
@@ -105,30 +62,13 @@ div#principal:active, div#myStuff:active {
 }
 
 div#myStuff {
-	position: absolute;
-	background-color: #000000;
-	display: block;
-	margin: auto;
-	z-index: 1;
-	height: 43%;
-	min-height: 10%;
+	top: 40%;
+	height: auto;
 	width: 43%;
-	opacity: .8;
-	top: 50%;
-	bottom: 0;
-	left: 0;
-	right: 0; 
-	box-shadow: 1px 1px 1px black;
-	border-radius: 5px;
-	z-index: 10;
 }
 
 h1#title {
 	margin-top: 5%;
-}
-
-table {
-	margin-top: 2%;
 }
 
 img {
@@ -144,11 +84,9 @@ img:hover {
 }
 
 div:hover {
-	display: block;
 	opacity: 1;
 	transition: opacity .8s;
 	box-shadow: 0px 0px 5px black;
-	z-index: 1;
 }
 
 div:active {
@@ -163,9 +101,18 @@ div.backgroundBlock {
 	background-color: #FFFFFF;
 }
 
+footer {
+	display: flex;
+	flex-direction: column;
+	/*min-height: 6vh;*/
+	width: 20%;
+	height: auto;
+	top: 100%;
+}
+
 /* RESOLUTIONS */
 
-@media only screen and (max-width: 1440px) {
+/*@media only screen and (max-width: 1440px) {
 	div {
 		height: 18%;
 	}
@@ -283,9 +230,4 @@ div.backgroundBlock {
 		margin-top: 10%;
 		font-size: 1.5vw;
 	}
-}
-
-/*	FUTURE
- *	-webkit-transform: scale(1);
- *	height: 300px;
- */
+}*/

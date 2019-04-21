@@ -2,14 +2,16 @@
 <html>
 <head>
 	<title>Muchon's Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="img/icon.ico">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<script type="text/javascript" src="js/functions.js"></script>
 </head>
 <body id="body">
-	<div id="principal" onmouseenter="changeText('Programmed to work and not to feel')" onmouseleave="changeBack()"><h3 class="texto">Hello World</h3><p id="presentation" class="texto">Guilherme Muchon -- Developer</p></div>
+	<div id="principal" class="standard col-md-4" onmouseenter="changeText('Programmed to work and not to feel')" onmouseleave="changeBack()"><h3 class="texto">Hello World</h3><p id="presentation" class="texto">Guilherme Muchon -- Developer</p></div>
 
-	<div id="myStuff"><h1 id="title" class="texto">My Stuff</h1>
+	<div id="myStuff" class="standard col-md-6"><h1 id="title" class="texto">My Stuff</h1>
 		<table>
 			<tr>
 				<th><h2 class="texto">Steam</h2></th>
@@ -30,7 +32,7 @@
 		</table>
 	</div>
 
-	<footer>
+	<footer class="standard">
 		<p id="copy" class="texto">&copy; Copyright 2019 - Guilherme Muchon</p>
 	</footer>
 
